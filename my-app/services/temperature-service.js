@@ -14,8 +14,8 @@ function convertTemperatureTo(unit, value) {
     }
 }
 
-function isIceTemperature(value, UNIT){
-    if(UNIT == UNIT.Celcius){
+function isIceTemperature(value, unit){
+    if(unit == UNIT.Celcius){
         return value <=0
     }
     else{

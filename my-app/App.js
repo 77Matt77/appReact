@@ -18,8 +18,8 @@ export default function App() {
   useEffect(() => {
     const temperatureAsFloat = Number.parseFloat(inputValue);
     if (!isNaN(temperatureAsFloat)) {
-      const isCold = isIceTemperature(temperatureAsFloat, currentUnit);
-      setCurrentBackground(isCold ? coldBackground : hotBackground);
+      const isColdBackground = isIceTemperature(temperatureAsFloat, currentUnit);
+      setCurrentBackground(isColdBackground ? coldBackground : hotBackground);
     }
   }, [inputValue, currentUnit]); 
   
